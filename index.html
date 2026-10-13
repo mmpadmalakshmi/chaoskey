@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>⚡ CHAOS KEYBOARD ⚡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Press+Start+2P&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Canvas for intense generative particles, glitches, and physics splatter -->
+  <canvas id="chaos-canvas"></canvas>
+
+  <!-- Overlay container for flying typography, memes, shapes, and floating debris -->
+  <div id="chaos-overlay"></div>
+
+  <!-- UI & Central Interaction Zone -->
+  <main class="app-container" id="app-container">
+    <header class="chaos-header">
+      <div class="glitch-title-wrap">
+        <h1 class="chaos-title" data-text="⚡ CHAOS KEYBOARD ⚡">⚡ CHAOS KEYBOARD ⚡</h1>
+        <p class="chaos-subtitle">TYPE ANYTHING TO UNLEASH PURE DIGITAL MAYHEM</p>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-pill"><span class="stat-label">CHAOS LEVEL:</span> <span id="chaos-meter" class="stat-value">0%</span></div>
+        <div class="stat-pill"><span class="stat-label">KEYS SMASHED:</span> <span id="keystroke-count" class="stat-value">0</span></div>
+        <div class="stat-pill"><span class="stat-label">COMBO:</span> <span id="combo-count" class="stat-value">0x</span></div>
+      </div>
+    </header>
+
+    <!-- Chaos Screen / Terminal Display -->
+    <section class="screen-wrapper" id="screen-wrapper">
+      <div class="screen-bezel">
+        <div class="terminal-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">ENTROPY_BUFFER_V2.0.exe</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div id="live-text-stream" class="text-stream"></div>
+          <span class="cursor" id="cursor">█</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Interactive Virtual Keyboard -->
+    <section class="keyboard-section" id="keyboard-section">
+      <div class="keyboard" id="keyboard">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </section>
+
+    <!-- Audio & Mode Control Dock -->
+    <footer class="control-dock">
+      <button id="toggle-audio-btn" class="dock-btn pulse-glow" title="Toggle 8-bit sound synth">
+        <span class="icon">🔊</span> <span class="label">AUDIO SYNTH: ON</span>
+      </button>
+      <button id="nuke-btn" class="dock-btn nuke-btn" title="Total Screen Wipe & Mega Explosion">
+        <span class="icon">💣</span> <span class="label">NUKE CHAOS</span>
+      </button>
+      <button id="auto-chaos-btn" class="dock-btn" title="Auto smash keys">
+        <span class="icon">🌀</span> <span class="label">AUTO SMASH</span>
+      </button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
